@@ -111,7 +111,7 @@ namespace Employee_Dept_CRUD.Controllers
                     return View();
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 return View();
             }
@@ -145,9 +145,9 @@ namespace Employee_Dept_CRUD.Controllers
                     return View();
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                return View();
+                return View(ex);
             }
 
         }
